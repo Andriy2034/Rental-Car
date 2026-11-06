@@ -1,0 +1,56 @@
+/* [project]/src/components/Header/Header.module.css [app-client] (css) */
+.Header-module__ldgnoG__header {
+  background: #f2f4f7;
+  border-bottom: 1px solid #f2f4f7;
+  height: 68px;
+}
+
+.Header-module__ldgnoG__headerInner {
+  justify-content: space-between;
+  align-items: center;
+  width: min(1200px, 100% - 64px);
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.Header-module__ldgnoG__logo {
+  letter-spacing: -1px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.Header-module__ldgnoG__logo span {
+  color: var(--blue);
+}
+
+.Header-module__ldgnoG__navigation {
+  gap: 32px;
+  font-weight: 500;
+  display: flex;
+}
+
+.Header-module__ldgnoG__navigation a:hover, .Header-module__ldgnoG__navigation a[aria-current="page"] {
+  color: var(--blue);
+}
+
+@media (max-width: 760px) {
+  .Header-module__ldgnoG__headerInner {
+    width: calc(100% - 32px);
+  }
+
+  .Header-module__ldgnoG__header {
+    height: 64px;
+  }
+
+  .Header-module__ldgnoG__logo {
+    font-size: 22px;
+  }
+
+  .Header-module__ldgnoG__navigation {
+    gap: 24px;
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=src_components_Header_Header_module_css_1igg3k2-ikub5._.single.css.map*/

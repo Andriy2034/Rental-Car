@@ -1,0 +1,108 @@
+/* [project]/src/app/Common.module.css [app-client] (css) */
+.Common-module__9uZQNq__container {
+  width: min(1200px, 100% - 64px);
+  margin-inline: auto;
+}
+
+.Common-module__9uZQNq__button {
+  background: var(--blue);
+  color: #fff;
+  border: 1px solid #0000;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 24px;
+  font-weight: 600;
+  transition: background .18s, border-color .18s;
+  display: inline-flex;
+}
+
+.Common-module__9uZQNq__button:hover {
+  background: var(--blue-hover);
+}
+
+.Common-module__9uZQNq__outline {
+  color: var(--text);
+  border-color: var(--blue);
+  background: #fff;
+  min-width: 156px;
+}
+
+.Common-module__9uZQNq__outline:hover {
+  border-color: var(--blue-hover);
+  background: #f4f7ff;
+}
+
+.Common-module__9uZQNq__textButton {
+  color: var(--blue);
+  font: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.Common-module__9uZQNq__emptyState, .Common-module__9uZQNq__errorState {
+  text-align: center;
+  padding: 80px 24px;
+}
+
+.Common-module__9uZQNq__emptyState > svg {
+  width: 48px;
+  height: 48px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.Common-module__9uZQNq__emptyState h1, .Common-module__9uZQNq__emptyState h2 {
+  font-size: 28px;
+}
+
+.Common-module__9uZQNq__emptyState p, .Common-module__9uZQNq__errorState p {
+  color: #667085;
+  margin: 12px 0 24px;
+}
+
+.Common-module__9uZQNq__formError {
+  color: #b42318;
+  margin: 12px 0 24px;
+  font-size: 14px;
+}
+
+.Common-module__9uZQNq__spinner {
+  border: 2px solid;
+  border-right-color: #0000;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: .7s linear infinite Common-module__9uZQNq__spin;
+  display: inline-block;
+}
+
+.Common-module__9uZQNq__srOnly {
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+@keyframes Common-module__9uZQNq__spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 760px) {
+  .Common-module__9uZQNq__container {
+    width: calc(100% - 32px);
+  }
+}
+
+/*# sourceMappingURL=src_app_Common_module_css_1igg3k2-ikub5._.single.css.map*/

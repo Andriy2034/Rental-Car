@@ -1,0 +1,11 @@
+/* [project]/src/app/Loading.module.css.css [app-client] (css) */
+.pageLoading {
+  min-height: 60vh;
+  color: var(--blue);
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+/*# sourceMappingURL=src_app_Loading_module_css_0l_88vtvohi12.css.map*/

@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/admin/Desktop/Project/Rental-Car/src/app/loading.tsx"],"sourcesContent":["export default function Loading() {\n  return (\n    <main id=\"main\" className=\"page-loading\" role=\"status\">\n      <span className=\"spinner\" />\n      Loading…\n    </main>\n  );\n}\n"],"names":["Loading","id","className","role"],"mappings":";;;;;;AAAe,SAASA;IACtB,qBACE,8OAAC;QAAKC,IAAG;QAAOC,WAAU;QAAeC,MAAK;;0BAC5C,8OAAC;gBAAKD,WAAU;;;;;;YAAY;;;;;;;AAIlC"}}]
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/admin/Desktop/Project/Rental-Car/src/app/loading.tsx"],"sourcesContent":["import styles from './loading.module.css';\n\nexport default function Loading() {\n  return (\n    <main id=\"main\" className={styles.pageLoading} role=\"status\">\n      <span className={styles.spinner} />\n      Loading…\n    </main>\n  );\n}\n"],"names":["Loading","id","className","styles","pageLoading","role","spinner"],"mappings":";;;;;;;;;;;;AAEe,SAASA;IACtB,qBACE,8OAAC;QAAKC,IAAG;QAAOC,WAAWC,OAAOC,WAAW;QAAEC,MAAK;;0BAClD,8OAAC;gBAAKH,WAAWC,OAAOG,OAAO;;;;;;YAAI;;;;;;;AAIzC"}}]
 }

@@ -1,0 +1,15 @@
+/* [project]/src/app/Layout.module.css [app-client] (css) */
+.Layout-module__bk1eTG__skipLink {
+  z-index: 100;
+  background: #fff;
+  padding: 12px;
+  position: fixed;
+  top: -100px;
+  left: 16px;
+}
+
+.Layout-module__bk1eTG__skipLink:focus {
+  top: 12px;
+}
+
+/*# sourceMappingURL=src_app_Layout_module_css_1igg3k2-ikub5._.single.css.map*/

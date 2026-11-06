@@ -1,6 +1,9 @@
-{"timestamp":"00:00:00.456","source":"Server","level":"LOG","message":"- Cache Components enabled"}
-{"timestamp":"00:00:00.456","source":"Server","level":"LOG","message":"- Partial Prefetching enabled"}
-{"timestamp":"00:00:00.456","source":"Server","level":"LOG","message":"- Experiments (use with caution):"}
-{"timestamp":"00:00:00.456","source":"Server","level":"LOG","message":"  ✓ agentFeedback"}
-{"timestamp":"00:00:00.456","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:46.274","source":"Server","level":"LOG","message":"✓ Compiled in 21ms"}
+{"timestamp":"00:00:00.745","source":"Server","level":"LOG","message":"- Cache Components enabled"}
+{"timestamp":"00:00:00.745","source":"Server","level":"LOG","message":"- Partial Prefetching enabled"}
+{"timestamp":"00:00:00.745","source":"Server","level":"LOG","message":"- Experiments (use with caution):"}
+{"timestamp":"00:00:00.745","source":"Server","level":"LOG","message":"  ✓ agentFeedback"}
+{"timestamp":"00:00:00.745","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:20.407","source":"Server","level":"LOG","message":"✓ Compiled in 5ms"}
+{"timestamp":"00:02:22.687","source":"Server","level":"LOG","message":"✓ Compiled in 11ms"}
+{"timestamp":"00:02:22.783","source":"Server","level":"ERROR","message":"⨯ ReferenceError: common is not defined"}
+{"timestamp":"00:02:23.758","source":"Server","level":"LOG","message":"✓ Compiled in 14ms"}

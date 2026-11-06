@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
-import Providers from '@/src/components/Providers';
-import Header from '@/src/components/Header';
+import Providers from '@/src/components/Providers/Providers';
+import Header from '@/src/components/Header/Header';
 import './globals.css';
+import styles from './Layout.module.css';
 export const metadata: Metadata = {
   title: { default: 'RentalCar — Find your perfect rental car', template: '%s | RentalCar' },
   description:
@@ -19,7 +20,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body>
         <Providers>
-          <a className="skip-link" href="#main">
+          <a className={styles.skipLink} href="#main">
             Skip to content
           </a>
           <Header />
