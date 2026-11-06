@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 19, "column": 0}, "map": {"version":3,"sources":["file:///Users/admin/Desktop/Project/Rental-Car/src/app/icon.svg.mjs%20(structured%20image%20object)"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 200, height: 200 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,uIAAG;IAAEC,OAAO;IAAKC,QAAQ;AAAI"}},
+    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":["file:///Users/admin/Desktop/Project/Rental-Car/src/app/page.tsx"],"sourcesContent":["import Link from 'next/link';\nexport default function Home() {\n  return (\n    <main id=\"main\" className=\"hero\">\n      <div className=\"hero-content\">\n        <h1>Find your perfect rental car</h1>\n        <p>Reliable and budget-friendly rentals for any journey</p>\n        <Link className=\"button hero-button\" href=\"/catalog\">\n          View Catalog\n        </Link>\n      </div>\n    </main>\n  );\n}\n"],"names":["Home","id","className","href"],"mappings":";;;;;AAAA;;;AACe,SAASA;IACtB,qBACE,8OAAC;QAAKC,IAAG;QAAOC,WAAU;kBACxB,cAAA,8OAAC;YAAIA,WAAU;;8BACb,8OAAC;8BAAG;;;;;;8BACJ,8OAAC;8BAAE;;;;;;8BACH,8OAAC,0LAAI;oBAACA,WAAU;oBAAqBC,MAAK;8BAAW;;;;;;;;;;;;;;;;;AAM7D"}}]
+}

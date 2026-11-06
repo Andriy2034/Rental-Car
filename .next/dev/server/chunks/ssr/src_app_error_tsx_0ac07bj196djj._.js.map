@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/admin/Desktop/Project/Rental-Car/src/app/error.tsx"],"sourcesContent":["'use client';\nexport default function ErrorPage({ reset }: { reset: () => void }) {\n  return (\n    <main id=\"main\" className=\"empty-state\">\n      <h1>Unable to load this page</h1>\n      <p>Please check your connection and try again.</p>\n      <button className=\"button\" onClick={reset}>\n        Try again\n      </button>\n    </main>\n  );\n}\n"],"names":["ErrorPage","reset","id","className","onClick"],"mappings":";;;;;AAAA;;AACe,SAASA,UAAU,EAAEC,KAAK,EAAyB;IAChE,qBACE,8OAAC;QAAKC,IAAG;QAAOC,WAAU;;0BACxB,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAE;;;;;;0BACH,8OAAC;gBAAOA,WAAU;gBAASC,SAASH;0BAAO;;;;;;;;;;;;AAKjD"}}]
+}
