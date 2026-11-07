@@ -1,0 +1,150 @@
+/* [project]/src/app/catalog/CarDetails.module.css [app-client] (css) */
+.CarDetails-module__LBEjuq__details {
+  grid-template-columns: 1.05fr 1fr;
+  align-items: start;
+  gap: 72px;
+  padding-top: 84px;
+  padding-bottom: 104px;
+  display: grid;
+}
+
+.CarDetails-module__LBEjuq__detailImage {
+  object-fit: cover;
+  background: var(--field);
+  border-radius: 19px;
+  width: 100%;
+  height: 400px;
+}
+
+.CarDetails-module__LBEjuq__detailHeading {
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 16px;
+  display: flex;
+}
+
+.CarDetails-module__LBEjuq__detailHeading h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.CarDetails-module__LBEjuq__detailHeading > span {
+  color: var(--muted);
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.CarDetails-module__LBEjuq__detailLocation {
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 8px;
+  font-size: 14px;
+  display: flex;
+}
+
+.CarDetails-module__LBEjuq__detailLocation span {
+  align-items: center;
+  gap: 4px;
+  display: flex;
+}
+
+.CarDetails-module__LBEjuq__detailPrice {
+  color: var(--blue);
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.CarDetails-module__LBEjuq__description {
+  margin-top: 32px;
+}
+
+.CarDetails-module__LBEjuq__detailSection {
+  margin-top: 64px;
+}
+
+.CarDetails-module__LBEjuq__detailSection h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.CarDetails-module__LBEjuq__detailSection ul {
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.CarDetails-module__LBEjuq__detailSection li {
+  align-items: flex-start;
+  gap: 8px;
+  display: flex;
+}
+
+.CarDetails-module__LBEjuq__detailSection svg, .CarDetails-module__LBEjuq__detailLocation svg {
+  stroke-width: 2px;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+}
+
+.CarDetails-module__LBEjuq__detailLocation svg {
+  margin-top: 0;
+}
+
+@media (max-width: 1100px) {
+  .CarDetails-module__LBEjuq__details {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .CarDetails-module__LBEjuq__detailImage {
+    height: 340px;
+  }
+
+  .CarDetails-module__LBEjuq__detailSection {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .CarDetails-module__LBEjuq__details {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 32px;
+  }
+
+  .CarDetails-module__LBEjuq__detailLeft {
+    display: contents;
+  }
+
+  .CarDetails-module__LBEjuq__detailImage {
+    aspect-ratio: 1.5;
+    grid-row: 1;
+    height: auto;
+  }
+
+  .CarDetails-module__LBEjuq__detailInfo {
+    grid-row: 2;
+  }
+
+  .CarDetails-module__LBEjuq__detailSection {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .CarDetails-module__LBEjuq__detailLocation {
+    gap: 8px 16px;
+  }
+}
+
+/* [project]/src/components/BookingForm/BookingForm.module.css [app-client] (css) */
+
+
+/*# sourceMappingURL=src_1msvaa7d7wagr._.css.map*/

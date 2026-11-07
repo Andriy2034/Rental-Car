@@ -17,7 +17,7 @@
   letter-spacing: -1px;
 }
 .logo span {
-  color: var(--blue);
+  color: #00AAD4;
 }
 .navigation {
   display: flex;
@@ -26,7 +26,7 @@
 }
 .navigation a:hover,
 .navigation a[aria-current='page'] {
-  color: var(--blue);
+  color: #00AAD4;
 }
 @media (max-width: 760px) {
   .headerInner {

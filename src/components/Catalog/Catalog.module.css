@@ -1,0 +1,229 @@
+.catalog {
+  padding-top: 84px;
+  padding-bottom: 124px;
+}
+
+.emptyStateImage {
+  width: 160px;
+  height: auto;
+  margin: 0 auto 24px;
+}
+.filters {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+.filterField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--muted);
+  font-weight: 400;
+  width: 204px;
+}
+.filterField select {
+  height: 44px;
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 34px 10px 16px;
+  background: var(--field);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  cursor: pointer;
+}
+.priceFilter {
+  width: 196px;
+}
+.mileageFilter {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 320px;
+  min-width: 0;
+}
+.mileageFilter legend {
+  font-size: 12px;
+  color: var(--muted);
+  padding: 0;
+  margin-bottom: 8px;
+  line-height: 1.33;
+}
+.mileageFilter > div {
+  display: flex;
+  background: var(--field);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.mileageFilter label {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 44px;
+  padding-left: 24px;
+  gap: 4px;
+  font-weight: 500;
+}
+.mileageFilter label + label {
+  border-left: 1px solid var(--line);
+}
+.mileageFilter input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  padding: 10px 8px 10px 0;
+  font-weight: 500;
+  outline-offset: -3px;
+}
+.mileageFilter input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+.mileageFilter input::-webkit-inner-spin-button,
+.mileageFilter input::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.filterActions {
+  position: relative;
+  flex: 0 0 156px;
+  width: 156px;
+}
+.searchButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 24px;
+  border: 0;
+  border-radius: 12px;
+  background: #00AAD4;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.searchButton:hover {
+  background: #0095BA;
+}
+.clearFilters {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.clearFilters:hover {
+  color: #667085;
+  text-decoration: underline;
+}
+.carGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 48px 32px;
+}
+.loadMore {
+  text-align: center;
+  margin-top: 80px;
+}
+.resultBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -28px;
+  margin-bottom: 28px;
+  color: #667085;
+  font-size: 14px;
+}
+.skeletonCard > div {
+  height: 268px;
+  border-radius: 14px;
+}
+.skeletonCard > span {
+  display: block;
+  height: 20px;
+  margin-top: 16px;
+  border-radius: 4px;
+  width: 85%;
+}
+.skeletonCard > span:last-child {
+  width: 60%;
+  height: 12px;
+}
+.skeletonCard > * {
+  background: linear-gradient(90deg, #f2f4f7 25%, #e7e9ed 50%, #f2f4f7 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+@media (max-width: 1100px) {
+  .carGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px 24px;
+  }
+  .filters {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 760px) {
+  .catalog {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .filters {
+    gap: 16px;
+    margin-bottom: 56px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .filterField,
+  .priceFilter,
+  .mileageFilter,
+  .filterActions {
+    width: 100%;
+  }
+  .mileageFilter {
+    grid-column: 1/-1;
+  }
+  .filterActions {
+    grid-column: 1/-1;
+  }
+  .carGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 20px;
+  }
+  .skeletonCard > div {
+    height: 230px;
+  }
+  .loadMore {
+    margin-top: 40px;
+  }
+  .resultBar {
+    margin-top: 0;
+  }
+}
+@media (max-width: 480px) {
+  .carGrid {
+    grid-template-columns: 1fr;
+  }
+}

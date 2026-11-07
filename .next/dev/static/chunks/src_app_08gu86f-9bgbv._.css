@@ -73,8 +73,8 @@
 }
 
 .Common-module__9uZQNq__button {
-  background: var(--blue);
   color: #fff;
+  background: #00aad4;
   border: 1px solid #0000;
   border-radius: 12px;
   justify-content: center;
@@ -88,19 +88,19 @@
 }
 
 .Common-module__9uZQNq__button:hover {
-  background: var(--blue-hover);
+  background: #0095ba;
 }
 
 .Common-module__9uZQNq__outline {
   color: var(--text);
-  border-color: var(--blue);
   background: #fff;
+  border-color: #00aad4;
   min-width: 156px;
 }
 
 .Common-module__9uZQNq__outline:hover {
-  border-color: var(--blue-hover);
-  background: #f4f7ff;
+  background: #fff;
+  border-color: #0095ba;
 }
 
 .Common-module__9uZQNq__textButton {

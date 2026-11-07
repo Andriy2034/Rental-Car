@@ -21,7 +21,7 @@
 }
 
 .Header-module__ldgnoG__logo span {
-  color: var(--blue);
+  color: #00aad4;
 }
 
 .Header-module__ldgnoG__navigation {
@@ -31,7 +31,7 @@
 }
 
 .Header-module__ldgnoG__navigation a:hover, .Header-module__ldgnoG__navigation a[aria-current="page"] {
-  color: var(--blue);
+  color: #00aad4;
 }
 
 @media (max-width: 760px) {

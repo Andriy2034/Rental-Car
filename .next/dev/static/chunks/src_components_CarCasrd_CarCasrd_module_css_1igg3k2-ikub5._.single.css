@@ -1,0 +1,146 @@
+/* [project]/src/components/CarCasrd/CarCasrd.module.css [app-client] (css) */
+.CarCasrd-module__mw4zjq__carImage {
+  background: #f2f4f7;
+  border-radius: 14px;
+  height: 268px;
+  position: relative;
+  overflow: hidden;
+}
+
+.CarCasrd-module__mw4zjq__carImage:after {
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(#1018283d, #0000 40%);
+  position: absolute;
+  inset: 0;
+}
+
+.CarCasrd-module__mw4zjq__carImage img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.CarCasrd-module__mw4zjq__favorite {
+  z-index: 1;
+  color: #fff;
+  background: none;
+  border: 0;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: grid;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.CarCasrd-module__mw4zjq__favorite svg {
+  stroke-width: 2px;
+  width: 19px;
+  height: 19px;
+}
+
+.CarCasrd-module__mw4zjq__favorite.CarCasrd-module__mw4zjq__isFavorite {
+  color: var(--blue);
+}
+
+.CarCasrd-module__mw4zjq__isFavorite svg {
+  fill: currentColor;
+}
+
+.CarCasrd-module__mw4zjq__carTitle {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+}
+
+.CarCasrd-module__mw4zjq__carTitle h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.CarCasrd-module__mw4zjq__carTitle h2 span {
+  color: var(--blue);
+}
+
+.CarCasrd-module__mw4zjq__carTitle strong {
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.CarCasrd-module__mw4zjq__carMeta {
+  color: var(--muted);
+  white-space: nowrap;
+  align-items: center;
+  gap: 0;
+  margin-top: 8px;
+  font-size: 12px;
+  display: flex;
+  overflow: hidden;
+}
+
+.CarCasrd-module__mw4zjq__carMeta span {
+  border-right: 1px solid var(--line);
+  padding: 0 6px;
+}
+
+.CarCasrd-module__mw4zjq__carMeta span:first-child {
+  padding-left: 0;
+}
+
+.CarCasrd-module__mw4zjq__carMeta span:last-child {
+  text-overflow: ellipsis;
+  border: 0;
+  padding-right: 0;
+  overflow: hidden;
+}
+
+.CarCasrd-module__mw4zjq__carMeta.CarCasrd-module__mw4zjq__second {
+  margin-top: 4px;
+}
+
+.CarCasrd-module__mw4zjq__readMore {
+  width: 100%;
+  margin-top: 28px;
+}
+
+@media (max-width: 760px) {
+  .CarCasrd-module__mw4zjq__carImage {
+    height: 230px;
+  }
+}
+
+@media (max-width: 480px) {
+  .CarCasrd-module__mw4zjq__carImage {
+    height: 280px;
+  }
+
+  .CarCasrd-module__mw4zjq__carTitle h2 {
+    font-size: 17px;
+  }
+}
+
+.CarCasrd-module__mw4zjq__carCard {
+  flex-direction: column;
+  display: flex;
+}
+
+.CarCasrd-module__mw4zjq__carImage {
+  flex-shrink: 0;
+}
+
+.CarCasrd-module__mw4zjq__carMeta.CarCasrd-module__mw4zjq__second {
+  margin-bottom: 28px;
+}
+
+.CarCasrd-module__mw4zjq__readMore {
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=src_components_CarCasrd_CarCasrd_module_css_1igg3k2-ikub5._.single.css.map*/

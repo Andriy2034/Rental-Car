@@ -9,7 +9,7 @@
   gap: 10px;
   border: 1px solid transparent;
   border-radius: 12px;
-  background: var(--blue);
+  background: #00AAD4;
   color: #fff;
   font-weight: 600;
   min-height: 44px;
@@ -19,17 +19,17 @@
     border-color 0.18s;
 }
 .button:hover {
-  background: var(--blue-hover);
+  background: #0095BA;
 }
 .outline {
   color: var(--text);
   background: white;
-  border-color: var(--blue);
+  border-color: #00AAD4;
   min-width: 156px;
 }
 .outline:hover {
-  background: #f4f7ff;
-  border-color: var(--blue-hover);
+  background: #fff;
+  border-color: #0095BA;
 }
 .textButton {
   border: 0;
