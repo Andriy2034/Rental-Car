@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "../CarDetails.module.css";
 import type { Metadata } from "next";
 import { cache } from "react";
@@ -37,11 +38,14 @@ export default async function CarDetails({ params }: Props) {
     <main id="main" className={styles.page}>
       <div className={styles.details}>
         <div className={styles.detailLeft}>
-          <img
+          <Image
             className={styles.detailImage}
             src={car.img}
             alt={`${car.brand} ${car.model}, ${car.year}`}
-            fetchPriority="high"
+            width={670}
+            height={536}
+            sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1100px) 50vw, 670px"
+            preload
           />
           <BookingForm carId={car.id} />
         </div>
@@ -53,7 +57,7 @@ export default async function CarDetails({ params }: Props) {
             <span>Article: {car.stockNumber || car.id.slice(0, 8)}</span>
           </div>
           <div className={styles.detailLocation}>
-            <img
+            <Image
               src="/svg/location.svg"
               alt=""
               width={16}
@@ -72,7 +76,7 @@ export default async function CarDetails({ params }: Props) {
               {car.rentalConditions.map((condition) => (
                 <li key={condition}>
                   {" "}
-                  <img
+                  <Image
                     src="/svg/component.svg"
                     alt=""
                     width={16}
@@ -89,7 +93,7 @@ export default async function CarDetails({ params }: Props) {
             <ul>
               <li>
                 {" "}
-                <img
+                <Image
                   src="/svg/year.svg"
                   alt=""
                   width={16}
@@ -100,7 +104,7 @@ export default async function CarDetails({ params }: Props) {
               </li>
               <li>
                 {" "}
-                <img
+                <Image
                   src="/svg/type.svg"
                   alt=""
                   width={16}
@@ -111,7 +115,7 @@ export default async function CarDetails({ params }: Props) {
               </li>
               <li>
                 {" "}
-                <img
+                <Image
                   src="/svg/fuel.svg"
                   alt=""
                   width={16}
@@ -122,7 +126,7 @@ export default async function CarDetails({ params }: Props) {
               </li>
               <li>
                 {" "}
-                <img
+                <Image
                   src="/svg/engine.svg"
                   alt=""
                   width={16}
@@ -133,7 +137,7 @@ export default async function CarDetails({ params }: Props) {
               </li>
               <li>
                 {" "}
-                <img
+                <Image
                   src="/svg/mileage.svg"
                   alt=""
                   width={16}
@@ -150,7 +154,7 @@ export default async function CarDetails({ params }: Props) {
               {car.features.map((feature) => (
                 <li key={feature}>
                   {" "}
-                  <img
+                  <Image
                     src="/svg/component.svg"
                     alt=""
                     width={16}

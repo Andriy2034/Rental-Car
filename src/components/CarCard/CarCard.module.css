@@ -1,0 +1,89 @@
+.carImage {
+  flex-shrink: 0;
+  height: 268px;
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f2f4f7;
+}
+.carImage:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(16, 24, 40, 0.24), transparent 40%);
+}
+.carImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.carTitle h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.carTitle h2 span {
+  color: var(--blue);
+}
+.carTitle strong {
+  font-weight: 500;
+  flex-shrink: 0;
+}
+.carMeta {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.carMeta span {
+  padding: 0 6px;
+  border-right: 1px solid var(--line);
+}
+.carMeta span:first-child {
+  padding-left: 0;
+}
+.carMeta span:last-child {
+  border: 0;
+  padding-right: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.carMeta.second {
+  margin-top: 4px;
+  margin-bottom: 28px;
+}
+.readMore {
+  width: 100%;
+  margin-top: auto;
+}
+@media (max-width: 760px) {
+  .carImage {
+    height: 230px;
+  }
+}
+@media (max-width: 480px) {
+  .carImage {
+    height: 280px;
+  }
+  .carTitle h2 {
+    font-size: 17px;
+  }
+}
+
+.carCard {
+  display: flex;
+  flex-direction: column;
+}

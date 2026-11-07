@@ -1,14 +1,14 @@
-import Link from 'next/link';
-export default function Home() {
+import Link from "next/link";
+import common from "./Common.module.css";
+
+export default function NotFound() {
   return (
-    <main id="main" className="hero">
-      <div className="hero-content">
-        <h1>Find your perfect rental car</h1>
-        <p>Reliable and budget-friendly rentals for any journey</p>
-        <Link className="button hero-button" href="/catalog">
-          View Catalog
-        </Link>
-      </div>
+    <main id="main" className={common.emptyState}>
+      <h1>Page not found</h1>
+      <p>The page or car you are looking for is unavailable.</p>
+      <Link href="/catalog" className={common.button}>
+        View Catalog
+      </Link>
     </main>
   );
 }

@@ -1,28 +1,30 @@
 @font-face {
   font-family: Manrope;
-  src: url('/manrope-regular.ttf') format('truetype');
+  src: url("/manrope-regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: Manrope;
-  src: url('/manrope-medium.ttf') format('truetype');
+  src: url("/manrope-medium.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: Manrope;
-  src: url('/manrope-semibold.ttf') format('truetype');
+  src: url("/manrope-semibold.ttf") format("truetype");
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: Manrope;
-  src: url('/manrope-bold.ttf') format('truetype');
+  src: url("/manrope-bold.ttf") format("truetype");
   font-weight: 700 800;
   font-display: swap;
 }
 :root {
+  --accent: #00aad4;
+  --accent-hover: #0095ba;
   --text: #101828;
   --muted: #8d929a;
   --blue: #3470ff;
@@ -102,4 +104,3 @@ textarea:focus-visible {
     transition: none !important;
   }
 }
-

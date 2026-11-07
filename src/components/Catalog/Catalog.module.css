@@ -103,7 +103,7 @@
   padding: 10px 24px;
   border: 0;
   border-radius: 12px;
-  background: #00AAD4;
+  background: var(--accent);
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -112,7 +112,7 @@
   transition: background 0.18s;
 }
 .searchButton:hover {
-  background: #0095BA;
+  background: var(--accent-hover);
 }
 .clearFilters {
   position: absolute;

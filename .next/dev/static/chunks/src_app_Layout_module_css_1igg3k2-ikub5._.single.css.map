@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/Layout.module.css"],"sourcesContent":[".skipLink {\n  position: fixed;\n  top: -100px;\n  left: 16px;\n  background: white;\n  padding: 12px;\n  z-index: 100;\n}\n.skipLink:focus {\n  top: 12px;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;AAQA"}}]
-}

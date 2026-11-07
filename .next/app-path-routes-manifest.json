@@ -1,8 +1,0 @@
-{
-  "/_global-error/page": "/_global-error",
-  "/_not-found/page": "/_not-found",
-  "/catalog/[carId]/page": "/catalog/[carId]",
-  "/catalog/page": "/catalog",
-  "/icon.svg/route": "/icon.svg",
-  "/page": "/"
-}

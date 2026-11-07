@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState, type FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import {
   carsQuery,
@@ -10,7 +10,8 @@ import {
   type FilterMetadata,
   type Filters,
 } from "../../lib/api";
-import CarCard from "../CarCasrd/CarCasrd";
+import Image from "next/image";
+import CarCard from "../CarCard/CarCard";
 import styles from "./Catalog.module.css";
 import common from "../../app/Common.module.css";
 
@@ -18,31 +19,6 @@ export default function Catalog() {
   const [draft, setDraft] = useState<Filters>(emptyFilters);
   const [filters, setFilters] = useState<Filters>(emptyFilters);
   const [validation, setValidation] = useState("");
-  const [favorites, setFavorites] = useState<string[]>([]);
-  const [storageReady, setStorageReady] = useState(false);
-  useEffect(() => {
-    try {
-      const saved: unknown = JSON.parse(
-        localStorage.getItem("rentalcar-favorites") || "[]",
-      );
-      if (Array.isArray(saved))
-        setFavorites(
-          saved.filter((id): id is string => typeof id === "string"),
-        );
-    } catch {
-      /* Storage may be unavailable. */
-    }
-    setStorageReady(true);
-  }, []);
-  useEffect(() => {
-    if (storageReady) {
-      try {
-        localStorage.setItem("rentalcar-favorites", JSON.stringify(favorites));
-      } catch {
-        /* Favorites still work in memory. */
-      }
-    }
-  }, [favorites, storageReady]);
   const metadata = useQuery({
     queryKey: ["car-filters"],
     queryFn: ({ signal }) =>
@@ -207,24 +183,19 @@ export default function Catalog() {
       ) : items.length ? (
         <div className={styles.carGrid}>
           {items.map((car) => (
-            <CarCard
-              key={car.id}
-              car={car}
-              favorite={favorites.includes(car.id)}
-              toggle={() =>
-                setFavorites((previous) =>
-                  previous.includes(car.id)
-                    ? previous.filter((id) => id !== car.id)
-                    : [...previous, car.id],
-                )
-              }
-            />
+            <CarCard key={car.id} car={car} />
           ))}
         </div>
       ) : (
         !cars.isError && (
           <div className={common.emptyState}>
-            <img src="/no-cars.jpg" alt="" className={styles.emptyStateImage} />
+            <Image
+              src="/no-cars.jpg"
+              alt=""
+              width={160}
+              height={160}
+              className={styles.emptyStateImage}
+            />
 
             <h2>No cars found</h2>
             <p>Try another brand, price or mileage range.</p>

@@ -1,9 +1,10 @@
-import styles from './Loading.module.css';
+import common from "./Common.module.css";
+import styles from "./Loading.module.css";
 
 export default function Loading() {
   return (
     <main id="main" className={styles.pageLoading} role="status">
-      <span className={styles.spinner} />
+      <span className={common.spinner} />
       Loading…
     </main>
   );

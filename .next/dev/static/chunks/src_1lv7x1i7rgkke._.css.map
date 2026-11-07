@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/admin/Desktop/Project/Rental-Car/src/components/Header/Header.module.css.css"],"sourcesContent":[".header {\n  height: 68px;\n  background: #f2f4f7;\n  border-bottom: 1px solid #f2f4f7;\n}\n.headerInner {\n  width: min(1200px, calc(100% - 64px));\n  height: 100%;\n  margin: auto;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.logo {\n  font-size: 24px;\n  font-weight: 800;\n  letter-spacing: -1px;\n}\n.logo span {\n  color: var(--blue);\n}\n.navigation {\n  display: flex;\n  gap: 32px;\n  font-weight: 500;\n}\n.navigation a:hover,\n.navigation a[aria-current='page'] {\n  color: var(--blue);\n}\n@media (max-width: 760px) {\n  .headerInner {\n    width: calc(100% - 32px);\n  }\n  .header {\n    height: 64px;\n  }\n  .logo {\n    font-size: 22px;\n  }\n  .navigation {\n    gap: 24px;\n    font-size: 14px;\n  }\n}\n"],"names":[],"mappings":"AAAA;;;;;;AAKA;;;;;;;;;AAQA;;;;;;AAKA;;;;AAGA;;;;;;AAKA;;;;AAIA;EACE;;;;EAGA;;;;EAGA;;;;EAGA"}},
-    {"offset": {"line": 56, "column": 0}, "map": {"version":3,"sources":["file:///Users/admin/Desktop/Project/Rental-Car/src/app/layout.module.css.css"],"sourcesContent":[".skipLink {\n  position: fixed;\n  top: -100px;\n  left: 16px;\n  background: white;\n  padding: 12px;\n  z-index: 100;\n}\n.skipLink:focus {\n  top: 12px;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;AAQA"}}]
-}

@@ -50,7 +50,6 @@ export async function request<T>(path: string, init?: RequestInit): Promise<T> {
       const data = await response.json();
       if (typeof data.message === 'string') message = data.message;
     } catch {
-      /* Non-JSON errors use the fallback. */
     }
     throw new ApiError(response.status, message);
   }
