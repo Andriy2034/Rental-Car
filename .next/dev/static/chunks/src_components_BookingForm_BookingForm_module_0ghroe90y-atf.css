@@ -1,0 +1,152 @@
+/* [project]/src/components/BookingForm/BookingForm.module.css [app-client] (css) */
+.BookingForm-module__KlHK9W__booking {
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  margin-top: 32px;
+  padding: 32px;
+}
+
+.BookingForm-module__KlHK9W__booking h2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.33;
+}
+
+.BookingForm-module__KlHK9W__booking > p {
+  color: var(--muted);
+  margin: 8px 0 24px;
+}
+
+.BookingForm-module__KlHK9W__booking form {
+  flex-direction: column;
+  gap: 16px;
+  display: flex;
+}
+
+.BookingForm-module__KlHK9W__booking input, .BookingForm-module__KlHK9W__booking textarea, .BookingForm-module__KlHK9W__dateField {
+  background: var(--field);
+  border: 0;
+  border-radius: 12px;
+  width: 100%;
+  min-width: 0;
+  padding: 12px 20px;
+}
+
+.BookingForm-module__KlHK9W__booking input {
+  min-height: 50px;
+}
+
+.BookingForm-module__KlHK9W__booking textarea {
+  resize: vertical;
+  min-height: 92px;
+}
+
+.BookingForm-module__KlHK9W__booking input::placeholder, .BookingForm-module__KlHK9W__booking textarea::placeholder {
+  color: var(--muted);
+}
+
+.BookingForm-module__KlHK9W__booking .BookingForm-module__KlHK9W__dateField {
+  padding: 0;
+  position: relative;
+}
+
+.BookingForm-module__KlHK9W__dateField > span {
+  color: var(--muted);
+  font-size: 12px;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+
+.BookingForm-module__KlHK9W__booking .BookingForm-module__KlHK9W__dateField input {
+  color: #667085;
+  height: 64px;
+  padding-top: 28px;
+  padding-bottom: 8px;
+}
+
+.BookingForm-module__KlHK9W__booking .BookingForm-module__KlHK9W__sendButton {
+  color: #fff;
+  cursor: pointer;
+  background: #00afd1;
+  border: 0;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 46px;
+  margin-top: 8px;
+  padding: 11px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  transition: background .18s;
+  display: inline-flex;
+}
+
+.BookingForm-module__KlHK9W__booking .BookingForm-module__KlHK9W__sendButton:hover {
+  background: #0097b5;
+}
+
+.BookingForm-module__KlHK9W__booking .BookingForm-module__KlHK9W__formError {
+  margin: 0;
+}
+
+.BookingForm-module__KlHK9W__toast {
+  z-index: 20;
+  background: #fff;
+  border: 1px solid #a6d9bb;
+  border-radius: 14px;
+  align-items: flex-start;
+  gap: 12px;
+  width: min(440px, 100vw - 32px);
+  padding: 20px;
+  display: flex;
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  box-shadow: 0 8px 40px #10182824;
+}
+
+.BookingForm-module__KlHK9W__toast > svg {
+  color: #149453;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.BookingForm-module__KlHK9W__toast p {
+  color: #667085;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.BookingForm-module__KlHK9W__toast button {
+  background: none;
+  border: 0;
+  padding: 2px;
+  display: flex;
+}
+
+@media (max-width: 1100px) {
+  .BookingForm-module__KlHK9W__booking {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 760px) {
+  .BookingForm-module__KlHK9W__booking {
+    grid-row: 3;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .BookingForm-module__KlHK9W__booking {
+    padding: 24px 20px;
+  }
+}
+
+/*# sourceMappingURL=src_components_BookingForm_BookingForm_module_0ghroe90y-atf.css.map*/

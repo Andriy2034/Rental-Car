@@ -1,0 +1,185 @@
+.booking {
+  border: 0;
+  border-radius: 20px;
+  background: #fff;
+  padding: 32px;
+  margin-top: 32px;
+}
+.booking h2 {
+  font-size: 20px;
+  line-height: 1.33;
+  font-weight: 500;
+}
+.booking > p {
+  color: var(--muted);
+  margin: 8px 0 24px;
+}
+.booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.field {
+  min-width: 0;
+}
+.controlWrap {
+  position: relative;
+}
+.booking .control {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 50px;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: var(--field);
+  color: var(--text);
+  font: inherit;
+  line-height: 24px;
+  transition:
+    border-color 0.18s,
+    background 0.18s;
+}
+.booking textarea.control {
+  min-height: 180px;
+  resize: none;
+}
+.control::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+.booking .dateControl {
+  height: 64px;
+  padding-top: 28px;
+  padding-bottom: 8px;
+  color: #667085;
+}
+.dateLabel {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 16px;
+}
+.booking .controlInvalid {
+  padding-right: 48px;
+  border-color: #ff343b;
+  background: #ffe0e0;
+}
+.booking .dateControl.controlInvalid {
+  padding-right: 64px;
+}
+.controlInvalid:focus-visible {
+  outline: 2px solid #ff343b;
+  outline-offset: 2px;
+}
+.floatingLabel {
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  left: 12px;
+  padding: 0 8px;
+  border-radius: 10px 10px 0 0;
+  background: #ffe0e0;
+  color: #ff343b;
+  font-size: 12px;
+  line-height: 20px;
+}
+.errorIcon {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  color: #ff343b;
+  pointer-events: none;
+}
+.dateErrorIcon {
+  right: 42px;
+}
+.booking .fieldError {
+  margin: 2px 0 0;
+  color: #ff343b;
+  font-size: 14px;
+  line-height: 20px;
+}
+.booking .serverError {
+  margin: 0;
+  color: #b42318;
+  font-size: 14px;
+  line-height: 20px;
+}
+.booking .sendButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 46px;
+  margin-top: 8px;
+  padding: 11px 24px;
+  border: 0;
+  border-radius: 12px;
+  background: #00afd1;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.booking .sendButton:hover {
+  background: #0097b5;
+}
+.toast {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: min(440px, calc(100vw - 32px));
+  z-index: 20;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: white;
+  padding: 20px;
+  border: 1px solid #a6d9bb;
+  border-radius: 14px;
+  box-shadow: 0 8px 40px #10182824;
+}
+.toast > svg {
+  color: #149453;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.toast p {
+  font-size: 14px;
+  color: #667085;
+  margin-top: 6px;
+}
+.toast button {
+  background: none;
+  border: 0;
+  display: flex;
+  padding: 2px;
+}
+@media (max-width: 1100px) {
+  .booking {
+    padding: 24px;
+  }
+}
+@media (max-width: 760px) {
+  .booking {
+    grid-row: 3;
+    margin-top: 0;
+  }
+}
+@media (max-width: 480px) {
+  .booking {
+    padding: 24px 20px;
+  }
+}

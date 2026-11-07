@@ -1,0 +1,235 @@
+/* [project]/src/app/Common.module.css [app-client] (css) */
+.Common-module__9uZQNq__container {
+  width: min(1200px, 100% - 64px);
+  margin-inline: auto;
+}
+
+.Common-module__9uZQNq__button {
+  color: #fff;
+  background: #00aad4;
+  border: 1px solid #0000;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 24px;
+  font-weight: 600;
+  transition: background .18s, border-color .18s;
+  display: inline-flex;
+}
+
+.Common-module__9uZQNq__button:hover {
+  background: #0095ba;
+}
+
+.Common-module__9uZQNq__outline {
+  color: var(--text);
+  background: #fff;
+  border-color: #00aad4;
+  min-width: 156px;
+}
+
+.Common-module__9uZQNq__outline:hover {
+  background: #fff;
+  border-color: #0095ba;
+}
+
+.Common-module__9uZQNq__textButton {
+  color: var(--blue);
+  font: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.Common-module__9uZQNq__emptyState, .Common-module__9uZQNq__errorState {
+  text-align: center;
+  padding: 80px 24px;
+}
+
+.Common-module__9uZQNq__emptyState > svg {
+  width: 48px;
+  height: 48px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.Common-module__9uZQNq__emptyState h1, .Common-module__9uZQNq__emptyState h2 {
+  font-size: 28px;
+}
+
+.Common-module__9uZQNq__emptyState p, .Common-module__9uZQNq__errorState p {
+  color: #667085;
+  margin: 12px 0 24px;
+}
+
+.Common-module__9uZQNq__formError {
+  color: #b42318;
+  margin: 12px 0 24px;
+  font-size: 14px;
+}
+
+.Common-module__9uZQNq__spinner {
+  border: 2px solid;
+  border-right-color: #0000;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: .7s linear infinite Common-module__9uZQNq__spin;
+  display: inline-block;
+}
+
+.Common-module__9uZQNq__srOnly {
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+@keyframes Common-module__9uZQNq__spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 760px) {
+  .Common-module__9uZQNq__container {
+    width: calc(100% - 32px);
+  }
+}
+
+/* [project]/src/components/BookingForm/BookingForm.module.css [app-client] (css) */
+.BookingForm-module__KlHK9W__booking {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  margin-top: 40px;
+  padding: 32px;
+}
+
+.BookingForm-module__KlHK9W__booking h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.BookingForm-module__KlHK9W__booking > p {
+  color: var(--muted);
+  margin: 8px 0 24px;
+}
+
+.BookingForm-module__KlHK9W__booking form {
+  flex-direction: column;
+  gap: 16px;
+  display: flex;
+}
+
+.BookingForm-module__KlHK9W__booking input, .BookingForm-module__KlHK9W__booking textarea, .BookingForm-module__KlHK9W__dateField {
+  background: var(--field);
+  border: 0;
+  border-radius: 12px;
+  width: 100%;
+  padding: 12px 20px;
+}
+
+.BookingForm-module__KlHK9W__booking textarea {
+  resize: vertical;
+  min-height: 88px;
+}
+
+.BookingForm-module__KlHK9W__booking input::placeholder, .BookingForm-module__KlHK9W__booking textarea::placeholder {
+  color: var(--muted);
+}
+
+.BookingForm-module__KlHK9W__booking .BookingForm-module__KlHK9W__dateField {
+  padding: 0;
+  position: relative;
+}
+
+.BookingForm-module__KlHK9W__dateField > span {
+  color: var(--muted);
+  font-size: 12px;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+
+.BookingForm-module__KlHK9W__booking .BookingForm-module__KlHK9W__dateField input {
+  color: #667085;
+  height: 64px;
+  padding-top: 28px;
+  padding-bottom: 8px;
+}
+
+.BookingForm-module__KlHK9W__sendButton {
+  align-self: center;
+  width: 156px;
+  margin-top: 8px;
+}
+
+.BookingForm-module__KlHK9W__booking .BookingForm-module__KlHK9W__formError {
+  margin: 0;
+}
+
+.BookingForm-module__KlHK9W__toast {
+  z-index: 20;
+  background: #fff;
+  border: 1px solid #a6d9bb;
+  border-radius: 14px;
+  align-items: flex-start;
+  gap: 12px;
+  width: min(440px, 100vw - 32px);
+  padding: 20px;
+  display: flex;
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  box-shadow: 0 8px 40px #10182824;
+}
+
+.BookingForm-module__KlHK9W__toast > svg {
+  color: #149453;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.BookingForm-module__KlHK9W__toast p {
+  color: #667085;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.BookingForm-module__KlHK9W__toast button {
+  background: none;
+  border: 0;
+  padding: 2px;
+  display: flex;
+}
+
+@media (max-width: 1100px) {
+  .BookingForm-module__KlHK9W__booking {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 760px) {
+  .BookingForm-module__KlHK9W__booking {
+    grid-row: 3;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .BookingForm-module__KlHK9W__booking {
+    padding: 24px 20px;
+  }
+}
+
+/*# sourceMappingURL=src_1k361r4cj6e_-._.css.map*/
