@@ -1,0 +1,3 @@
+module.exports=[23953,a=>{"use strict";var b=a.i(87924);a.s(["default",0,function({reset:a}){return(0,b.jsxs)("main",{id:"main",className:"empty-state",children:[(0,b.jsx)("h1",{children:"Unable to load this page"}),(0,b.jsx)("p",{children:"Please check your connection and try again."}),(0,b.jsx)("button",{className:"button",onClick:a,children:"Try again"})]})}])}];
+
+//# sourceMappingURL=src_app_error_tsx_0ac07bj196djj._.js.map

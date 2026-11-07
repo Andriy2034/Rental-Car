@@ -1,21 +1,28 @@
-import type { Metadata } from 'next';
-import Providers from '@/src/components/Providers/Providers';
-import Header from '@/src/components/Header/Header';
-import './globals.css';
-import styles from './Layout.module.css';
+import type { Metadata } from "next";
+import Providers from "@/src/components/Providers/Providers";
+import Header from "@/src/components/Header/Header";
+import "./globals.css";
+import styles from "./Layout.module.css";
+import { Suspense } from "react";
+
 export const metadata: Metadata = {
-  title: { default: 'RentalCar — Find your perfect rental car', template: '%s | RentalCar' },
+  title: {
+    default: "RentalCar — Find your perfect rental car",
+    template: "%s | RentalCar",
+  },
   description:
-    'Find your perfect rental car in Ukraine. Compare cars, filter by brand, price and mileage, and book your next journey with RentalCar.',
-  applicationName: 'RentalCar',
+    "Find your perfect rental car in Ukraine. Compare cars, filter by brand, price and mileage, and book your next journey with RentalCar.",
+  applicationName: "RentalCar",
   openGraph: {
-    title: 'RentalCar',
-    description: 'Reliable and budget-friendly car rentals for any journey.',
-    type: 'website',
+    title: "RentalCar",
+    description: "Reliable and budget-friendly car rentals for any journey.",
+    type: "website",
   },
   robots: { index: true, follow: true },
 };
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body>
@@ -23,7 +30,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <a className={styles.skipLink} href="#main">
             Skip to content
           </a>
-          <Header />
+          <Suspense fallback={null}>
+            <Header />
+          </Suspense>
           {children}
         </Providers>
       </body>
